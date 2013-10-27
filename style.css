@@ -1,0 +1,77 @@
+@font-face {
+	font-family:	'Black Ops One';
+	font-style:	normal;
+	font-weight:	400;
+	src:		local('Black Ops One'), local('BlackOpsOne-Regular'), url(blackops.woff) format('woff');
+}
+
+* {
+	margin:		0px;
+	padding:	0px;
+}
+
+body {
+	background-color:	#ffae4f;
+	color:			#874900;
+	width:			100%;
+	text-align:			center;
+}
+
+div {
+	position:	relative;
+	margin:		auto;
+	width:		900px;
+}
+
+div#ctl {
+}
+
+p#nump {
+	font-family:	'Black Ops One',	'monospace';
+	font-size:	200px;
+	line-height:	1.2em;
+	text-align:	center;
+}
+
+div#anssheel {
+	position:	absolute;
+	top:		20em;
+	width:		100%;
+}
+
+div.answers {
+	background-color:	#ffc989;
+	font-family:	'Black Ops One',	'monospace';
+	font-size:	28px;
+	margin:		1em auto;
+	box-shadow:	0 0 10px 10px;
+	transition:		all	0.5s;
+	-webkit-transition:	all	0.5s;
+}
+
+div.answers:hover {
+	opacity:	0.7;
+}
+
+input#cnt {
+	background-color:	rgba(255, 255, 255, 0.7);
+	border-style:		none;
+	font-size:		1em;
+}
+
+button {
+	background-color:	rgba(255, 255, 255, 0.7);
+	border-style:		none;
+	font-size:		1em;
+	transition:		all	0.5s;
+	-webkit-transition:	all	0.5s;
+}
+
+button:hover {
+	background-color:	rgba(255, 255, 255, 1);
+}
+
+button:active {
+	background-color:	rgba(0, 0, 0, 0.1);
+}
+
