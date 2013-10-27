@@ -75,3 +75,9 @@ button:active {
 	background-color:	rgba(0, 0, 0, 0.1);
 }
 
+div#footer {
+	position:		fixed;
+	width:			100%;
+	bottom:			0px;
+}
+
