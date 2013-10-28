@@ -53,16 +53,27 @@ div.answers:hover {
 	opacity:	0.7;
 }
 
-input#cnt {
+input {
 	background-color:	rgba(255, 255, 255, 0.7);
 	border-style:		none;
 	font-size:		1em;
+    margin:         0 0.3em;
+}
+
+input#total {
+    width:          10em;
+}
+
+input#cnt {
+    width:          3em;
 }
 
 button {
 	background-color:	rgba(255, 255, 255, 0.7);
 	border-style:		none;
 	font-size:		1em;
+    width:          10em;
+    margin:         0 1em;
 	transition:		all	0.5s;
 	-webkit-transition:	all	0.5s;
 }

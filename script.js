@@ -26,13 +26,13 @@ $(document).ready(function(){
 					$('#ans').prepend('<p>');
 					return;
 				}
-				if (total >= 216){
+				if (total >= $('input#total').val()){
 					$('p#nump').html('抽完了QAQ');
 					clearInterval(drawer);
 					drawer	= null;
 					return;
 				}
-				rand	= Math.floor(Math.random() * 216)+1;
+				rand	= Math.floor(Math.random() * $('input#total').val())+1;
 				while (anss[rand]){
 					if (++rand > 216)
 						rand	= 1;
