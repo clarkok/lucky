@@ -10,7 +10,6 @@ $(document).ready(function(){
     var    rest    = -1;
     var    total    = 0;
     var    level    = 0;
-    var    str    = ['三等奖', '二等奖', '一等奖', '特等奖', '没有了'];
     var    need_new= true;
     $('#total').blur(function(){
         for (i=1; i<=$('input#total').val(); i++)
@@ -61,18 +60,21 @@ $(document).ready(function(){
             $("#start").html('开始');
         }
     });
-    $('#level').html(str[level]);
+    $('input#prize').blur(function(){
+        if (!$(this).val())
+            $(this).val('特等奖');
+        $('button#level').html($(this).val());
+    });
     $('#level').click(function(){
         level++;
         need_new    = true;
         $('#ans').animate({'top':'-8em'});
-        $('#level').html(str[level]);
         $('.answers').unbind("click").click(function(){
             $(this).animate({'top':'0'});
             $(this).attr('id', '#'+(level-1));
         });
         if (level <= 4){
-            $('#ans').prepend('<h2>'+str[level-1]+'</h2>');
+            $('#ans').prepend('<h2>'+$('input#prize').val()+'</h2>');
         }
         else {
             $('#num').animate({'opacity':'0'}, 'fast', function(){$('#num').hide();});

@@ -35,7 +35,7 @@ p#nump {
 
 div#anssheel {
 	position:	absolute;
-	top:		20em;
+	top:		25em;
 	width:		100%;
 }
 
@@ -45,7 +45,7 @@ div.answers {
 	font-size:	28px;
 	margin:		1em auto;
 	box-shadow:	0 0 10px 10px;
-	transition:		all	0.5s;
+	transition:		all	0.3s;
 	-webkit-transition:	all	0.5s;
 }
 
@@ -58,6 +58,7 @@ input {
 	border-style:		none;
 	font-size:		1em;
     margin:         0 0.3em;
+    border:         1px solid brown;
 }
 
 input#total {
@@ -66,6 +67,10 @@ input#total {
 
 input#cnt {
     width:          3em;
+}
+
+input#prize {
+    width:          8em;
 }
 
 button {
